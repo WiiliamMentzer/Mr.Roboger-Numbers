@@ -1,9 +1,10 @@
-let inputArray = [];
-let processArray = [];
-let outputArray = [];
-let userInput = "14";
-
 function robogerProcess() {
+  let inputArray = [];
+  let processArray = [];
+  let outputArray = [];
+  let userInput = parseInt(document.getElementById("userInput").value);
+
+
   for (index = 0; index <= userInput; index += 1) {
     inputArray.push(index.toString());
   }
@@ -47,3 +48,12 @@ function robogerProcess() {
 
 }
 
+window.addEventListener("load", function() {
+  const form = document.getElementById("trackerForm");
+  form.addEventListener("submit", submitInput);
+});
+
+function submitInput(event) {
+  event.preventDefault();
+  robogerProcess();
+};
