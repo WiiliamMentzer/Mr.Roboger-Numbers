@@ -19,37 +19,28 @@ function robogerProcess() {
     for (let index = element.length - 1; index >= 0; index--) {
       if (element[index] === "3") {
         console.log("3 found");
-        processArray.element.join("");
         outputArray.push("Won't you be my neighbor?");
       } else if (element[index] === "2") {
         console.log("2 found");
-        processArray.element.join("");
         outputArray.push("Boop!");
       } else if (element[index] === "1") {
         console.log("1 found");
-        processArray.element.join("");
         outputArray.push("Beep!");
       } else {
         console.log(element);
         console.log("nothing to replace here sir");
-        processArray.element.join("");
+        outputArray.push(element.join());
       }
     };
   });
 
-  // for (let index = 0; index < processArray.length; index += 1) {
-  //   console.log(index);
-  //   processArray = inputArray[index].toString.split(" ");
-  //   console.log(processArray[index]);
-  // }
-
   console.log(processArray);
-  // console.log(outputArray);
+  console.log(outputArray);
 
 }
 
 window.addEventListener("load", function() {
-  const form = document.getElementById("trackerForm");
+  const form = document.getElementById("RobogerInput");
   form.addEventListener("submit", submitInput);
 });
 
