@@ -33,3 +33,65 @@ Test: "It should count up to userInput and output the inputArray"
 Code: robogerProcess();
 userInput = "4";
 Expected Output:  ["1", "2", "3", "4"]
+
+
+Test: "It should replace 1 2 or 3 with correct if else output"
+Code: robogerProcess();
+userInput = "4";
+Expected Output:  ["1", "Beep!", "Boop!", "Won't you be my neighbor?"]
+
+
+# Mr-Roboger
+
+#### By _William Mentzer_
+
+#### _Mr.Roboger_
+
+## _Github Pages Link_
+
+	N/A
+
+## Technologies Used
+
+* HTML
+* Javascipt
+
+## Description
+
+_User inputs a value and will output a series of Beeps, and Boops._
+
+## Setup/Installation Requirements
+
+* Clone Repository to Desktop.
+* Navigate to top level of the directory.
+* Open mr-roboger/index.html in browser.
+
+## Known Bugs
+
+* _Any digit past 9 will not funciton properly_
+
+## License
+
+MIT License
+
+Copyright (c) [2022] [William Mentzer]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright (c) _8/12/2022_ _William Mentzer_
