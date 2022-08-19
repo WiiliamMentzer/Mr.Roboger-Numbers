@@ -28,3 +28,8 @@ Expected Output: [1,3], [5,5], [6,6]
 "1 found"
 "3 found"
 "nothing to replace here sir"
+
+Test: "It should count up to userInput and output the inputArray"
+Code: robogerProcess();
+userInput = "4";
+Expected Output:  ["1", "2", "3", "4"]

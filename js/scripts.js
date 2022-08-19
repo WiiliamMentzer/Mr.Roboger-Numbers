@@ -1,28 +1,38 @@
 let inputArray = [];
 let processArray = [];
 let outputArray = [];
-let userInput = "13 24 34 55 78";
+let userInput = "14";
 
 function robogerProcess() {
-  inputArray = userInput.split(" ");
+  for (index = 0; index <= userInput; index += 1) {
+    inputArray.push(index.toString());
+  }
+
+  console.log(inputArray);
 
   inputArray.forEach(function(element) {
-    console.log(element);
     processArray.push((element).split(""));
   });
 
   processArray.forEach(function(element) {
     console.log(element);
-    for (let index = 0; index < element.length; index +=1) {
+    for (let index = element.length -1; index >= 0; index--) {
       console.log(element[index]);
-      if (element[index] === 3) {
+      if (element[index] === "3") {
         console.log("3 found");
-      } else if (element[index] === 2) {
+        processArray.splice(element, 1, "");
+        outputArray.push("Won't you be my neighbor?")
+      } else if (element[index] === "2") {
         console.log("2 found");
-      } else if (element[index] === 1) {
+        processArray.splice(element, 1, "");
+        outputArray.push("Boop!")
+      } else if (element[index] === "1") {
         console.log("1 found");
+        processArray.splice(element, 1, "");
+        outputArray.push("Beep!")
       } else {
         console.log("nothing to replace here sir");
+        outputArray.push(element.toString());
       }
     }
   });
@@ -33,7 +43,8 @@ function robogerProcess() {
   //   console.log(processArray[index]);
   // }
 
-
+  console.log(processArray);
+  console.log(outputArray);
 
 }
 
