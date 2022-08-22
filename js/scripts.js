@@ -20,6 +20,8 @@ function robogerProcess() {
       if (element[index] === "3") {
         console.log("3 found");
         outputArray.push("Won't you be my neighbor?");
+        element.concat("");
+        console.log(element);
       } else if (element[index] === "2") {
         console.log("2 found");
         outputArray.push("Boop!");
