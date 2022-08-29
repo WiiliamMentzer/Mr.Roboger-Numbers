@@ -1,4 +1,19 @@
 body {
   font-weight: bolder;
-  margin: 3rem;
+  background-color: darkgray;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: white;
+}
+
+.jumbotron h1 {
+  margin-bottom: 2rem;
+}
+
+.card {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }

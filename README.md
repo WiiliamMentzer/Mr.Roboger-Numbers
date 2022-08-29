@@ -16,7 +16,7 @@ Code: robogerProcess();
 Expected Output: "13, 14, 15, 16, 17" [ [1,3], [1,4], [1,5], [1,6], [1,7] ]
 
 
-Test: "It should return each array of  processArray"
+Test: "It should return each array when finished with inputArray."
 Code: robogerProcess();
 userInput = "13, 14, 15, 16, 17";
 Expected Output: [1,3], [1,4], [1,5], [1,6], [1,7] 
@@ -39,6 +39,11 @@ Test: "It should replace 1 2 or 3 with correct if else output"
 Code: robogerProcess();
 userInput = "4";
 Expected Output:  ["1", "Beep!", "Boop!", "Won't you be my neighbor?"]
+
+Test: "It should return an error display message if NaN or undefined is sent though the system."
+Code: robogerProcess();
+userInput = "abc";
+Expected Output: "You have not entered a correct value into the field, please try again."
 
 
 # Mr-Roboger
@@ -68,7 +73,7 @@ _User inputs a value and will output a series of Beeps, and Boops._
 
 ## Known Bugs
 
-* _Any digit past 9 will not funciton properly_
+* __
 
 ## License
 
